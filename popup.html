@@ -7,20 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Marquer</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <script type="importmap">
-      {
-        "imports": {
-          "@material/web/": "https://esm.run/@material/web/"
-        }
-      }
-    </script>
-    <script type="module">
-      import '@material/web/all.js';
-      import {styles as typescaleStyles} from '@material/web/typography/md-typescale-styles.js';
-
-      document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
-    </script>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -28,22 +17,8 @@
     <h1>📚 Marquer</h1>
   </div>
 
-
-  <h1 class="md-typescale-display-medium">Hello Material!</h1>
-  <form>
-    <p class="md-typescale-body-medium">Check out these controls in a form!</p>
-    <md-checkbox></md-checkbox>
-    <div>
-      <md-radio name="group"></md-radio>
-      <md-radio name="group"></md-radio>
-      <md-radio name="group"></md-radio>
-    </div>
-    <md-outlined-text-field label="Favorite color" value="Purple"></md-outlined-text-field>
-    <md-outlined-button type="reset">Reset</md-outlined-button>
-  </form>
-
   <div class="section">
-    <h2>📤 Export Bookmarks</h2>
+    <h2><span class="material-symbols-rounded">download</span> Export Bookmarks</h2>
     <select id="folderSelect">
       <option value="">Loading folders...</option>
     </select>
@@ -53,7 +28,7 @@
   </div>
 
   <div class="section">
-    <h2>📥 Import Bookmarks</h2>
+    <h2><span class="material-symbols-rounded">upload</span> Import Bookmarks</h2>
     <input type="file" id="importFile" accept=".json" />
     <button id="importBtn">Import Bookmark Collection</button>
     <div class="status" id="importStatus"></div>

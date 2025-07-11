@@ -8,9 +8,6 @@
     "storage",
     "downloads"
   ],
-  "content_security_policy": {
-    "extension_pages": "script-src 'self' https://esm.run; object-src 'self';"
-  },
   "icons": {
     "16": "icons/marquer-16.png",
     "48": "icons/marquer-48.png",

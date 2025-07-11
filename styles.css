@@ -1,10 +1,10 @@
 body {
   width: 350px;
   padding: 20px;
-  font-family: "Segoe UI", Arial, sans-serif;
   margin: 0;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
+  font-family: 'Roboto', sans-serif;
 }
 
 .header {
@@ -16,6 +16,7 @@ body {
   margin: 0;
   font-size: 24px;
   font-weight: 300;
+  font-family: 'Roboto', sans-serif;
 }
 
 .section {
@@ -31,6 +32,19 @@ body {
   margin: 0 0 10px 0;
   font-size: 16px;
   font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.material-symbols-rounded {
+  font-size: 18px;
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
 }
 
 select,
@@ -42,7 +56,9 @@ input[type="file"] {
   background: rgba(255, 255, 255, 0.9);
   color: #333;
   font-size: 14px;
+  font-family: 'Roboto', sans-serif;
   margin-bottom: 10px;
+  box-sizing: border-box;
 }
 
 button {
@@ -53,6 +69,8 @@ button {
   background: rgba(255, 255, 255, 0.2);
   color: white;
   font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -74,6 +92,7 @@ button:disabled {
   padding: 8px;
   border-radius: 5px;
   font-size: 12px;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
   display: none;
 }
@@ -107,6 +126,7 @@ button:disabled {
 
 .bookmark-count {
   font-size: 12px;
+  font-family: 'Roboto', sans-serif;
   opacity: 0.8;
   margin-top: 5px;
 }
