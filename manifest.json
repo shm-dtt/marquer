@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Bookmark Sharer",
+  "version": "1.0",
+  "description": "Export and import bookmark collections to share with friends",
+  "permissions": [
+    "bookmarks",
+    "storage",
+    "downloads"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Bookmark Sharer"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
