@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Bookmark Sharer",
+  "name": "Marquer - Bookmark Sharer",
   "version": "1.0",
   "description": "Export and import bookmark collections to share with friends",
   "permissions": [
@@ -8,9 +8,17 @@
     "storage",
     "downloads"
   ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' https://esm.run; object-src 'self';"
+  },
+  "icons": {
+    "16": "icons/marquer-16.png",
+    "48": "icons/marquer-48.png",
+    "128": "icons/marquer-128.png"
+  },
   "action": {
     "default_popup": "popup.html",
-    "default_title": "Bookmark Sharer"
+    "default_title": "Marquer"
   },
   "background": {
     "service_worker": "scripts/background.js"
