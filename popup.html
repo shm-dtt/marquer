@@ -15,22 +15,56 @@
 <body>
   <div class="header">
     <h1>📚 Marquer</h1>
+    <div class="tab-container">
+      <button class="tab-button active" data-tab="export">
+        <span class="material-symbols-rounded">download</span>
+        Export
+      </button>
+      <button class="tab-button" data-tab="import">
+        <span class="material-symbols-rounded">upload</span>
+        Import
+      </button>
+    </div>
   </div>
 
-  <div class="section">
-    <h2><span class="material-symbols-rounded">download</span> Export Bookmarks</h2>
-    <select id="folderSelect">
-      <option value="">Loading folders...</option>
-    </select>
-    <div class="bookmark-count" id="bookmarkCount"></div>
-    <button id="exportBtn">Export Selected Folder</button>
+  <div id="exportTab" class="tab-content active">
+    <h2 class="section-title">Export Bookmarks</h2>
+    
+    <div class="form-field">
+      <label for="folderSelect">Select folder</label>
+      <select id="folderSelect">
+        <option value="">Loading folders...</option>
+      </select>
+      <div class="bookmark-count" id="bookmarkCount"></div>
+    </div>
+
+    <button id="exportBtn" class="filled-button">
+      <span class="material-symbols-rounded">download</span>
+      Export Selected Folder
+    </button>
+    
     <div class="status" id="exportStatus"></div>
   </div>
 
-  <div class="section">
-    <h2><span class="material-symbols-rounded">upload</span> Import Bookmarks</h2>
-    <input type="file" id="importFile" accept=".json" />
-    <button id="importBtn">Import Bookmark Collection</button>
+  <div id="importTab" class="tab-content">
+    <h2 class="section-title">Import Bookmarks</h2>
+    
+    <div class="form-field">
+      <label for="importFile">Choose bookmark file</label>
+      <div class="file-input-wrapper">
+        <input type="file" id="importFile" accept=".json" />
+        <div class="file-input-button" id="fileInputButton">
+          <span class="material-symbols-rounded">upload_file</span>
+          Choose JSON file
+        </div>
+      </div>
+    </div>
+
+    <button id="importBtn" class="filled-button">
+      <span class="material-symbols-rounded">upload</span>
+      Import Bookmark Collection
+    </button>
+    
     <div class="status" id="importStatus"></div>
   </div>
 
